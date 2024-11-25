@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Laura Velo - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Laura Velo
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          lauradorinevelo@gmail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +393516404004
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#Skills">Skills</a>
+          <a class="topmenu" href="#Recommandations">Recommendations</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        
+        <img src="ai-generated-8775234_1280.png" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Laura Velo! <img src="https://www.svgrepo.com/show/433964/waving-hand-skin-3.svg" width="60px"/>
+          </h1>
+          <p>
+            I’m an enthusiastic full-stack developer student, just beginning my journey into the world of web development. Despite being early in my learning, I’m deeply passionate about both front-end and back-end technologies. I’m excited to dive into building dynamic, responsive, and user-friendly applications while continuously expanding my skill set. Driven by curiosity and a love for problem-solving, I’m committed to mastering the latest tools, frameworks, and best practices to become a well-rounded developer. Every day is an opportunity to learn and grow, and I’m eager to see where this exciting path takes me!
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>3 months of learning</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>3 months of learning</p>
+        </div>  
+
+        <div class="skill">
+            <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_960_720.png"/>
+            <h6>CSS</h6>
+            <p>3 months of learning</p>
+          </div>  
+
+          <div class="skill">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/006/030/600/small_2x/abstract-cloud-logo-blue-shape-cloud-computing-isolated-on-white-background-usable-for-business-and-technology-logos-flat-logo-design-template-element-vector.jpg"/>
+            <h6>Cloud Computing</h6>
+            <p>3 months of learning</p>
+          </div>  
+
+        <!-- Add more skills here -->
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3> Canva </h3>
+            <ul>
+              <li>Create an inspiring and visually engaging poster using Canva’s design tools.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>IBM cloud computing</h3>
+            <ul>
+              <li>Understand the key features, offerings, and benefits of IBM Cloud, and explore how it can be applied to real-world business scenarios.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Fashion Website</h3>
+            <ul>
+              <li>Created a styled multi-page website for a new player in the fashion industry and integrated it with a shopping cart, using stripe for payment gateway</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Laura Velo is a fast learner who quickly grasps key concepts in web development. She has a positive attitude and is an excellent team player. With her curious mindset, she consistently asks insightful questions. Laura takes initiative within the team and demonstrates strong potential for leadership.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Working with Laura Velo has been a fantastic experience. She is incredibly knowledgeable and consistently goes the extra mile to ensure everything is done correctly. For any future projects requiring her expertise, I would definitely be eager to collaborate with her again.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          I had the pleasure of working with Laura Velo during the initial phase of our venture, which required web development. She is a dedicated professional with deep expertise in the field. Laura would undoubtedly be an asset to any organization!
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="showPopup(true);">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        <!--Add the code here for the logo to appear and the icon to be actionable-->
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>Thanks for leaving a recommandation!</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
